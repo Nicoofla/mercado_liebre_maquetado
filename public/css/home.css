@@ -1,47 +1,150 @@
-/* main */
-* main{
-    background-color:#ebebeb; ;
- }
-
-.secction__img__banner{
+.img__banner{
     width: 100%;
     height:auto;
-}
-.section__h4--titulares{
-    font-size: 24px;
-    text-align: center;
    
 }
-.article__img{
+
+/* main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    line-height: 2px;
+    list-style-type:none;
+   
+    
+
+}
+ 
+
+
+
+/* articulo */
+.articulo{
+    margin: 10px 0px;
+}
+
+.section__h4--titulares{
+    font-size: 24px;
+    list-style-type: none;
+    color:#666 ;
+ 
+}
+
+.imagen__del__articulos{
     width: 100%;
-    background-size: cover;
-}
-.ofertas{
-    margin-top: 10px;
+
+ 
 }
 
-.article__ul__li__precio{
+
+/* logo del envio */
+.logo-envio{
+background-color: white;
+border-radius: 50%;
+border: 1px solid #39b54a;
+width: 40px;
+height: 40px;
+
+}
+section article figure div i{
+    color: #39b54a;
+    padding: 5px;
+}
+
+
+/* descripcion de del producto. los cambios se aplican en todos los productos */
+figure{
+    margin: 0%;
+}
+.descripcion__del__articulo{
+    background-color: white;
+    border-top: 1px solid #ebebeb ;
+    padding: 15px;
+    
+   
+}
+ 
+.precio__del__articulo{
     font-size: 18px;
+    list-style-type: none;
 }
-.article__ul__li__descuento{
+.descuento{
     font-size: 16px;
+    list-style-type: none;
+    color: #39b54a;
 }
-
+.nombre__del__articulo{
+    display: none;
+    
+}
+/* ............................................................................ */
 
 /* footer */
+footer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
 footer ul {
-    text-align: center;
+   text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
+    list-style-type:none;
+    justify-content: center;
 }
 footer i {
+    
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
    
 }
 
-footer div{
+footer p{
     padding-left: 20px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+   
+}
+/*============================================================= */
+
+/* tablet */
+
+@media (min-width: 365px){
+    .nombre__del__articulo{
+        display: flex;
+        margin-top: 10px;
+        font-weight: normal;
+        color:#666 ; 
+        padding-top: 2%; 
+    }
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+
+}
+    
+
+
+/* desktop */
+
+@media (min-width:769px){
+    
+    /* main */
+    .nombre__del__articulo{
+        margin-top: 10px;
+        font-weight: normal;
+        color:#666 ;
+        display: flex;
+        margin-top: 10px;  
+    }
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
 }
