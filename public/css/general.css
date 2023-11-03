@@ -4,12 +4,13 @@
 body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
     box-sizing: border-box;
     font-family: var(--tipografiaGeneral);
     display: flex;
     flex-wrap: wrap;
+    background-color:#ebebeb;
     justify-content: center;
-    background-color:#ebebeb ;
 } 
     
 

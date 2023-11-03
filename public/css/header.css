@@ -1,170 +1,260 @@
-header{
+header {
     background-color: #EAC926;
-    padding:  0%;
+
     width: 100%;
     height: auto;
     font-size: 12px;
-    
-   
+
 }
 
-.logo-de-la-compañia{
-    height: 2rem;
-    margin-top: 20px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-}
-
-
-/* busqueda */
-.formuladio-de-busqueda{
+.header__section {
     display: flex;
-    padding-left: 20px;
-    gap: 2px;
+    padding: 5%;
+    align-items: center;
+    gap: 7px;
+}
 
+.header__section__img {
+    width: 50%;
 }
-input{
-    
-    width: 170px;
-    font-size: 12px;
-    padding: 2.5px;
-    
-}
-button{
+
+.header__section__div-input {
     display: flex;
-    justify-content: center;
-    padding: 0px 2px;
-    
+    width: 50%;
 }
-button i{
-    margin: 2px 0px;
 
+input {
+    padding: 3px;
+    border-radius: 5px 0px 0px 5px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    background-color: #FFFF;
 }
-/* ----------------------------------------------- */
 
-.header__h4{
-    padding-left:50px;
-    padding-top: 5px;
+.header__section__div-button {
+    border-radius: 0px 5px 5px 0px;
+    padding: 3px;
+    border: none;
     color: #666;
-    margin-top: 10px;
+    background-color: #FFFF;
+}
+
+/* --------------------------- */
+
+
+.header__h4 {
+    margin-top: 0%;
+    text-align: center;
+    color: #666;
+    /* font-size: 12px; */
 }
 
 /* listas (ul)-------------------------------------*/
-.listas{
-    
+
+.header__nav__section__listas {
     display: none;
 }
 
-.header__lista--tienda , .header__lista--cliente{
-    padding-left: 20px;
+ul {
+    padding-left: 0%;
 }
 
-li{
+li {
     list-style-type: none
 }
 
-a{
+a {
     text-decoration: none;
     color: #666;
 }
 
-i{
-    margin-left: 2px;
-    
-}
-/* ------------------------------------- */
 
-/* seccion menu hamburguesa */
+/* ----------------------------- */
 
-.section-menu{
+
+.header__section__menu-desplegable {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    
+    margin: 15px 0px;
+    justify-content: center;
 }
 
 .burger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
-    background-color:#1259c3;
+    background-color: #1259c3;
     border-radius: 5px;
-    color: white;
-   
-   text-align:center;
+    width: 30px;
+    height: 30px;
+
 }
-.fas {                
-        font-size: 18px;
+
+.burger-menu i {
+    padding: 0%;
+    margin: 0%;
+    color: #FFFF;
+    font-size: 20px;
 }
-/*--------------------------------------------------------------  */
 
-/* tablet */
+/* ---------------------------------------------------------------- */
+/* vista de tablet */
+/* ---------------------------------------------------------------- */
 
-@media (min-width: 361px){
+@media (min-width: 361px) {
     
-    /* main*/
-    .logo-de-la-compañia{
-        height: 4.2rem;
-        margin-top: 20px;
-        padding-left: 30px;
-        padding-bottom: 10px;
-    }
-    
-    /* se sentra el h4 */
-    .header__h4{
-    text-align: center;
-    }
-    
-    /* listas */
-    .listas{
-        display: contents;
-    }
-    a{
-        color: #666;
+    header {
+        height: 120px;
     }
 
-    /* menu desplegable */
-    .section-menu , .burger-menu , .fas{
+    .header__section__img {
+        margin-right: 10px;
+
+    }
+
+    .header__section {
+        padding: 0%;
+        display: flex;
+        justify-content: start;
+        margin-left: 3px;
+        align-items: end;
+
+    }
+
+    .img__input__h4 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+
+    input {
+        width: 180px;
+        padding: 0px 40px 0px 2px;
+        font-size: 12px;
+        margin-left: 0%;
+        margin-bottom: 10px;
+    }
+    form{
+        width: auto;
+    }
+    .header__section__div-button {
+        padding: 5px;
+        height: 30px;
+    }
+
+    .header__h4 {
+        font-size: 12px;
+        width: 40%;
+        margin-bottom: 0%;
+        margin-top: 25px;
+    }
+
+    .header__nav__section__listas {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin: 0px 30px;
+
+    }
+
+    .header__nav__section__lista--tienda {
+        display: flex;
+        gap: 15px;
+    }
+
+    .header__nav__section__lista--cliente {
+        display: flex;
+        gap: 15px;
+    }
+
+    .fa-solid {
+        margin: 2px;
+    }
+
+    .burger-menu {
         display: none;
     }
-    
+
 }
 
-/* desktop */
+/* ----------------------------------------------------------------------- */
+/* deskptop */
+/* ----------------------------------------------------------------------- */
 
-@media (min-width: 769px){
-    
-    /* main*/
-    .logo-de-la-compañia{
-        height: 4.2rem;
-        margin-top: 20px;
-        padding-left: 30px;
-        padding-bottom: 10px;
-    }
-    
-    /* se sentra el h4 */
-    .header__h4{
-    text-align: center;
-    }
-    
-    /* listas */
-    .listas{
-        display: contents;
-    }
-    a{
-        color: #666;
+@media (min-width:769px) {
+    header {
+        height: 120px;
     }
 
-    /* menu desplegable */
-    .section-menu , .burger-menu , .fas{
+    .header__section__img {
+        margin-right: 20px;
+    }
+
+    .header__section {
+        padding: 0%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        align-items: end;
+
+    }
+
+    .img__input__h4 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0%;
+        height: 80px;
+        gap: 20px;
+
+    }
+
+    input {
+        width: 160px;
+        padding: 0px 40px 0px 2px;
+        font-size: 12px;
+        margin-left: 0%;
+        margin-bottom: 10px;
+    }
+
+    .header__section__div-button {
+        padding: 5px;
+        height: 30px;
+    }
+
+    .header__h4 {
+        font-size: 12px;
+        width: 40%;
+        margin-bottom: 0%;
+        margin-top: 25px;
+    }
+
+    .header__nav__section__listas {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin: 0px 30px;
+
+    }
+
+    .header__nav__section__lista--tienda {
+        display: flex;
+        gap: 15px;
+    }
+
+    .header__nav__section__lista--cliente {
+        display: flex;
+        gap: 15px;
+    }
+
+    .fa-solid {
+        margin: 2px;
+    }
+
+    .burger-menu {
         display: none;
     }
-
 }
-
-
-
