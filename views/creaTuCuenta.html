@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu Cuenta</title>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Crear cuenta</title>
 </head>
+
 <body>
-    <h1>Vamos a crear tu cuenta en Mercado Liebre</h1>
+<h3>Registrate</h3>
+    <form>
+        <div class="datos">
+
+            <label for="nombre"></label>
+            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required pattern="[A-Za-z]{2,}">
+            
+            <label for="apellido"></label>
+            <input type="text" placeholder="Apellido" id="apellido" name="apellido" required pattern="[A-Za-z]{2,}">
+
+            <label for="usuario"></label>
+            <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
+
+            <label for="email"></label>
+            <input type="email" placeholder="E-mail" id="email" name="email" required>
+
+            <label for="fecha_nacimiento"></label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="domicilio"></label>
+            <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
+        </div>
+        <h5 class="perfil">Perfil del usuario</h5>
+        
+            <div class="perfil__comprar--vender">
+                <input type="radio" id="comprar" name="perfil" value="comprar" checked>
+                <label for="comprar">Comprar</label>
+                <input type="radio" id="vender" name="perfil" value="vender">
+                <label for="vender">Vender</label>
+            </div>
+        
+            <h5>Categorías de interés:</h5> 
+        <div class="categorias-de-interes">
+            <input type="checkbox" id="electro" name="categorias" value="electro">
+            <label for="electro">Electro</label>
+            <input type="checkbox" id="moda" name="categorias" value="moda">
+            <label for="moda">Moda</label>
+            <input type="checkbox" id="hogar" name="categorias" value="hogar">
+            <label for="hogar">Hogar</label><br>
+            <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria">
+            <label for="jugueteria">Juguetería</label>
+            <input type="checkbox" id="vida_sana" name="categorias" value="vida_sana">
+            <label for="vida_sana">Vida sana</label>
+        </div>
+    <div class="foto-de-perfil">
+        <h5>Foto de perfil</h5>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+    </div>    
+        <div class="contraseña">
+            <label for="contraseña"></label>
+            <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" required>
+
+            <label for="confirmar_contraseña"></label>
+            <input type="password" placeholder="Confirmar contraseña" id="confirmar_contraseña"
+                name="confirmar_contraseña" required>
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+
+    </form>
+
 </body>
+
 </html>

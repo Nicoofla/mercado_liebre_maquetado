@@ -1,0 +1,244 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;  
+}
+
+body{
+    background-color:#ebebeb ;
+    align-items: center;
+}
+h3{ 
+    background-color: #03264C;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.datos input{
+    width: 90%;
+    margin: 15px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+/* perfil */
+
+h5{
+    width: 90%;
+    display: flex;
+    margin-left: 4%;
+}
+.perfil__comprar--vender{
+    width: 90%;
+    
+    display: inline-block;
+}
+.perfil__comprar--vender input{
+    width: 15%;
+    margin: 20px 0px;
+}
+.perfil__comprar--vender label{
+    width: 24%;
+    margin: 20px 0px;
+}
+
+/* categorias de interes */
+
+.categorias-de-interes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.categorias-de-interes input{
+   width: 25%;
+   height: 10px;
+   margin: 3% 0%;
+}
+.categorias-de-interes label{
+    width: 55%;
+    margin: 3% 0%;
+}
+/* foto de perfil */
+
+.foto-de-perfil h5{
+    width: 100%;
+    margin: 4%;
+}
+.foto-de-perfil input{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+}
+/* contraseña */
+
+.contraseña input{
+    width: 90%;
+    padding: 5px;
+    margin: 10px 5px;
+    margin-left: 3%;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+/* botones */
+.button{
+    display: flex;
+    justify-content:space-around;
+}
+.button input{
+    width: 30%;
+    padding: 2%;
+    border: #ebebeb solid 1px;
+    border-radius: 5px;
+    background-color: #03264C;
+    color: #fff;
+}
+
+/* -------------------------------------------------------------------- */
+/*------------------------- tablet -------------------------------------*/
+/* -------------------------------------------------------------------- */
+@media (min-width: 365px){
+
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+body{
+    width: 100%;
+    /* padding: 2%; */
+}
+h3{width: 100%;
+    border-radius: 5px;
+    height: auto;
+    padding: 5px;
+    text-align: start;
+}
+.datos{
+    width: 100%;
+}
+.datos input{
+    text-align: center;
+    width: 100%;
+}
+h5{
+    width: 100%;
+    margin: 15px 5px;
+}
+.categorias-de-interes{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    margin-left: 2.3%;
+}
+.perfil__comprar--vender input{
+    margin: 0%;
+}
+
+.categorias-de-interes input{
+    width: 7%;
+    margin: 0px;
+}
+.categorias-de-interes label{
+width: auto;
+margin: 1%;
+}
+.foto-de-perfil h5{
+    margin: 15px 5px;
+}
+.contraseña input{
+    width: 95%;
+    margin: 10px 5px;
+    text-align: center;  
+ 
+}
+.button{
+    justify-content: center;
+}
+.button input{
+    width: 15%;
+    padding: 10px;
+ margin-top: 10px;
+}
+
+
+
+
+
+
+}
+
+/* -------------------------------------------------------------------- */
+/*------------------------- desktop -------------------------------------*/
+/* -------------------------------------------------------------------- */
+@media (min-width:769px){
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+body{
+    width: 100%;
+    /* padding: 10%; */
+}
+h3{width: 100%;
+    border-radius: 5px;
+    height: auto;
+    padding: 5px;
+    text-align: start;
+}
+.datos{
+    width: 100%;
+}
+.datos input{
+    text-align: center;
+    width: 100%;
+}
+h5{
+    width: 100%;
+    margin: 15px 5px;
+}
+.categorias-de-interes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+    margin-left: 2.3%;
+}
+.perfil__comprar--vender input{
+    margin: 0%;
+}
+
+.categorias-de-interes input{
+    width: 5%;
+    margin: 0px;
+}
+.categorias-de-interes label{
+width: auto;
+margin: 0%;
+}
+.foto-de-perfil h5{
+    margin: 15px 5px;
+}
+.contraseña input{
+    width: 98%;
+    margin: 10px 5px;
+    text-align: center;  
+ 
+}
+.button{
+    justify-content: center;
+}
+.button input{
+    width: 15%;
+    padding: 10px;
+ margin-top: 10px;
+}
+
+
+}

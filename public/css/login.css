@@ -1,0 +1,17 @@
+main{
+    padding: 5%;
+}
+.login{
+    display: flex;
+    flex-wrap: wrap;
+}
+.login input{
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boton__enviar{
+    background-color:#1259c3;
+    color: #fff;
+}

@@ -23,12 +23,13 @@ header{
     gap: 2px;
 
 }
-input{
+.formuladio-de-busqueda input{
     
-    width: 170px;
-    font-size: 12px;
-    padding: 2.5px;
+width: 170px;
     
+font-size: 12px;
+    
+padding: 2.5px;
 }
 button{
     display: flex;
@@ -107,6 +108,7 @@ i{
 @media (min-width: 361px){
     
     /* main*/
+    
     .logo-de-la-compañia{
         height: 4.2rem;
         margin-top: 20px;
