@@ -1,14 +1,14 @@
-header{
+header {
     background-color: #EAC926;
-    padding:  0%;
+    padding: 0%;
     width: 100%;
     height: auto;
     font-size: 12px;
-    
-   
+
+
 }
 
-.logo-de-la-compañia{
+.logo-de-la-compañia {
     height: 2rem;
     margin-top: 20px;
     padding-left: 30px;
@@ -17,73 +17,79 @@ header{
 
 
 /* busqueda */
-.formuladio-de-busqueda{
+.formuladio-de-busqueda {
     display: flex;
     padding-left: 20px;
     gap: 2px;
 
 }
-.formuladio-de-busqueda input{
-    
-width: 170px;
-    
-font-size: 12px;
-    
-padding: 2.5px;
+
+.formuladio-de-busqueda input {
+
+    width: 170px;
+
+    font-size: 12px;
+
+    padding: 2.5px;
 }
-button{
+
+button {
     display: flex;
     justify-content: center;
     padding: 0px 2px;
-    
+
 }
-button i{
+
+button i {
     margin: 2px 0px;
 
 }
+
 /* ----------------------------------------------- */
 
-.header__h4{
-    padding-left:50px;
+.header__h4 {
+    padding-left: 50px;
     padding-top: 5px;
     color: #666;
     margin-top: 10px;
 }
 
 /* listas (ul)-------------------------------------*/
-.listas{
-    
+.listas {
+
     display: none;
 }
 
-.header__lista--tienda , .header__lista--cliente{
+.header__lista--tienda,
+.header__lista--cliente {
     padding-left: 20px;
 }
 
-li{
+li {
     list-style-type: none
 }
 
-a{
+a {
     text-decoration: none;
     color: #666;
 }
 
-i{
+i {
     margin-left: 2px;
-    
+
 }
+
 /* ------------------------------------- */
 
 /* seccion menu hamburguesa */
 
-.section-menu{
+.section-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
-    
+
 }
 
 .burger-menu {
@@ -92,81 +98,89 @@ i{
     align-items: center;
     width: 2rem;
     height: 2rem;
-    background-color:#1259c3;
+    background-color: #1259c3;
     border-radius: 5px;
     color: white;
-   
-   text-align:center;
+
+    text-align: center;
 }
-.fas {                
-        font-size: 18px;
+
+.fas {
+    font-size: 18px;
 }
+
 /*--------------------------------------------------------------  */
 
 /* tablet */
 
-@media (min-width: 361px){
-    
+@media (min-width: 361px) {
+
     /* main*/
-    
-    .logo-de-la-compañia{
+   
+    .logo-de-la-compañia {
         height: 4.2rem;
         margin-top: 20px;
         padding-left: 30px;
         padding-bottom: 10px;
     }
-    
+
     /* se sentra el h4 */
-    .header__h4{
-    text-align: center;
+    .header__h4 {
+        text-align: center;
     }
-    
+
     /* listas */
-    .listas{
+    .listas {
         display: contents;
     }
-    a{
+
+    a {
         color: #666;
     }
 
     /* menu desplegable */
-    .section-menu , .burger-menu , .fas{
+    .section-menu,
+    .burger-menu,
+    .fas {
         display: none;
     }
-    
+    body {
+        padding: 0%;
+    }
+
 }
 
 /* desktop */
 
-@media (min-width: 769px){
-    
+@media (min-width: 769px) {
+
     /* main*/
-    .logo-de-la-compañia{
+    .logo-de-la-compañia {
         height: 4.2rem;
         margin-top: 20px;
         padding-left: 30px;
         padding-bottom: 10px;
     }
-    
+
     /* se sentra el h4 */
-    .header__h4{
-    text-align: center;
+    .header__h4 {
+        text-align: center;
     }
-    
+
     /* listas */
-    .listas{
+    .listas {
         display: contents;
     }
-    a{
+
+    a {
         color: #666;
     }
 
     /* menu desplegable */
-    .section-menu , .burger-menu , .fas{
+    .section-menu,
+    .burger-menu,
+    .fas {
         display: none;
     }
 
 }
-
-
-
