@@ -23,11 +23,15 @@ main {
     margin: 10px 0px;
 }
 
-.section__h4--titulares h4 {
+.section__h4--titulares{
+    width: 100%;
     /* align-self: flex-start; */
-    font-size: 24px;
+    font-size: 18px;
     color: #666;
-    margin: 18px 0px;
+    /* margin: 18px 0px; */
+}
+.section__h4--titulares h4{
+    justify-content: start;
 }
 
 .imagen__del__articulos {
@@ -40,22 +44,26 @@ main {
 /* logo del envio */
 .logo-envio {
     height: 5px;
+     width: 100%;
 }
-
+.logo-envio i{
+    position: relative;
+   
+}
 section article figure div i {
     display: flex;
     text-align: center;
     justify-content: center;
     color: #39b54a;
-    padding: 6px;
+    padding: 3px;
     background-color: white;
     border-radius: 50%;
     border: 1px solid #39b54a;
-    width: 20px;
-    height: 20px;
-    position: relative;
-    right: -265px;
-    top: -22px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    right: -225px;
+    top: -18px;
 
 }
 
@@ -73,12 +81,18 @@ figure {
 
 }
 
+.articulo__precio-y-descuento{
+    width: 220px;
+    display: flex;
+    gap:10px
+}
 
-
-
+.precio__del__articulo{
+    width: 30%;
+}
 
 .descuento {
-
+    width: 70%;
     font-size: 16px;
     color: #39b54a;
 }
@@ -86,6 +100,7 @@ figure {
 .nombre__del__articulo {
     color: #666;
     font-weight: normal;
+    margin:10px 0px ;
 }
 
 /* ............................................................................ */
@@ -100,7 +115,8 @@ footer {
 
 footer ul {
     text-align: center;
-
+    list-style-type: none;
+    padding: 0%;
 }
 
 footer i {
@@ -145,47 +161,46 @@ footer p {
     }
 
     .articulo {
-        width: 47%;
+        width: 46%;
         
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+   
     .descripcion__del__articulo {
-        padding: 20px 20px;
+        padding: 5px;
         padding-top: 5px;
-
+        
     }
-    .logo-envio{
-        position: relative;
-        left: -10px;
+    .logo-envio i{
+       
+        left: 120px;
     }
     .articulo__precio-y-descuento{
         display: flex;
-        flex-wrap: wrap;
+        height: auto;
         width: 100%;
-       justify-content: flex-start;
        align-items: center;
-       
+       gap: 10px;
     }
 
 
     .precio__del__articulo {
         margin: 30px 0px;
-        width: 35%;
-        
+        width: 40%;
+        font-size: 12px;
+        margin: 15px 0px;
     }
 
     .descuento {
-        width: 35%;
-        margin:10px 0px;
+     font-size: 12px;
+        width: 50%;
+        margin: 15px 0px;
         
     }
 
     .nombre__del__articulo {
-        margin-top: 10px;
-        margin: 0%;
-        margin-left: 0%;
-
+      font-size: 13px;
     }
 
     /* --------------------footer---------------------- */
@@ -193,12 +208,11 @@ footer p {
 
     footer {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+       flex-direction: column;
     }
 
     footer section {
-        width: 30%;
+        width: 100%;
     }
 
     footer ul {
@@ -212,12 +226,14 @@ footer p {
     }
 
 }
+/* -------------------------------------------- */
 
-@media (min-width:769px) {
+@media (min-width:768px) {
 
     .section__h4--titulares{
-        display: flex;
+        display: block;
         width: 100%;
+        gap: 0px;
     }
 
     .secction__ultima--vista,
@@ -231,7 +247,7 @@ footer p {
 
 
     .articulo {
-        width: 200px;
+        width: 25%;
         margin: 10px 0px;
         
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -296,21 +312,24 @@ footer p {
 
 
     /* --------------------footer---------------------- */
+   
     footer {
         display: flex;
-        /* gap: 30px; */
-        flex-wrap: wrap;
-        justify-content: space-between;
+       
     }
 
     footer section {
-        width: 30%;
+        width:100%;
     }
 
     footer ul {
         width: 100%;
-        align-items: center;
-    }
+        align-items: center;}
+
+    p {
+        width: 100%;
+        margin: 15px;
+
 
     p {
         width: 100%;
