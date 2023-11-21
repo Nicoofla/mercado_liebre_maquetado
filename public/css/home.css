@@ -1,0 +1,340 @@
+.img__banner {
+    width: 100%;
+    height: auto;
+
+}
+
+/* main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    line-height: 2px;
+    list-style-type: none;
+
+}
+
+
+
+
+/* articulo */
+.articulo {
+    margin: 10px 0px;
+}
+
+.section__h4--titulares{
+    width: 100%;
+    /* align-self: flex-start; */
+    font-size: 18px;
+    color: #666;
+    /* margin: 18px 0px; */
+}
+.section__h4--titulares h4{
+    justify-content: start;
+}
+
+.imagen__del__articulos {
+    width: 100%;
+
+
+}
+
+
+/* logo del envio */
+.logo-envio {
+    height: 5px;
+     width: 100%;
+}
+.logo-envio i{
+    position: relative;
+   
+}
+section article figure div i {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #39b54a;
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    right: -225px;
+    top: -18px;
+
+}
+
+
+/* descripcion de del producto. los cambios se aplican en todos los productos */
+figure {
+    margin: 0%;
+}
+
+.descripcion__del__articulo {
+    background-color: white;
+    border-top: 2px solid #ebebeb;
+    padding: 5px 10px;
+
+
+}
+
+.articulo__precio-y-descuento{
+    width: 220px;
+    display: flex;
+    gap:10px
+}
+
+.precio__del__articulo{
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.nombre__del__articulo {
+    color: #666;
+    font-weight: normal;
+    margin:10px 0px ;
+}
+
+/* ............................................................................ */
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+
+}
+
+footer ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0%;
+}
+
+footer i {
+    font-size: 2em;
+    color: #1259c3;
+
+}
+
+footer p {
+    margin: 0%;
+    margin-top: 20px;
+}
+
+
+/*============================================================= */
+/* tablet */
+/*============================================================= */
+
+
+
+@media (min-width:361px) {
+
+
+
+
+    .section__h4--titulares {
+        display: flex;
+        width: 97%;
+
+    }
+
+    .section__h4--titulares h4 {
+        justify-content: start;
+    }
+
+    .secction__ultima--vista,
+    .ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .articulo {
+        width: 46%;
+        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+   
+    .descripcion__del__articulo {
+        padding: 5px;
+        padding-top: 5px;
+        
+    }
+    .logo-envio i{
+       
+        left: 120px;
+    }
+    .articulo__precio-y-descuento{
+        display: flex;
+        height: auto;
+        width: 100%;
+       align-items: center;
+       gap: 10px;
+    }
+
+
+    .precio__del__articulo {
+        margin: 30px 0px;
+        width: 40%;
+        font-size: 12px;
+        margin: 15px 0px;
+    }
+
+    .descuento {
+     font-size: 12px;
+        width: 50%;
+        margin: 15px 0px;
+        
+    }
+
+    .nombre__del__articulo {
+      font-size: 13px;
+    }
+
+    /* --------------------footer---------------------- */
+
+
+    footer {
+        display: flex;
+       flex-direction: column;
+    }
+
+    footer section {
+        width: 100%;
+    }
+
+    footer ul {
+        width: 100%;
+        align-items: center;}
+
+    p {
+        width: 100%;
+        margin: 15px;
+
+    }
+
+}
+/* -------------------------------------------- */
+
+@media (min-width:768px) {
+
+    .section__h4--titulares{
+        display: block;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .secction__ultima--vista,
+    .ofertas {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+       gap: 10px;
+    }
+
+
+    .articulo {
+        width: 25%;
+        margin: 10px 0px;
+        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+    .articulo__precio-y-descuento{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    .descripcion__del__articulo {
+        padding: 0px 10px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 50px;
+        padding: 10px 0px;
+        
+    }
+
+   
+    .logo-envio i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        height:15px;
+        width: 15px;
+        padding: 1px;
+        position: initial;
+        position: relative;
+        left:140px;
+        top: -15px;
+       
+    }
+    .precio__del__articulo{
+        
+        width: auto;
+        height: auto;
+        margin: 0%;
+    }
+    .descuento{
+        margin-left: 0px;
+      position: static;
+        margin: 0px;
+        height: auto;
+        width: auto;
+    }
+    .nombre__del__articulo {
+    
+       width: 100%;
+      text-align: center;
+       font-size: 14px;
+       margin-top: 20px;
+     
+    } 
+
+
+    /* --------------------footer---------------------- */
+   
+    footer {
+        display: flex;
+       
+    }
+
+    footer section {
+        width:100%;
+    }
+
+    footer ul {
+        width: 100%;
+        align-items: center;}
+
+    p {
+        width: 100%;
+        margin: 15px;
+
+
+    p {
+        width: 100%;
+        margin: 15px;
+
+    }
+}
+}

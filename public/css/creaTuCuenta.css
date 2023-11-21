@@ -1,6 +1,5 @@
 *{
-    padding: 0%;
-    margin: 0%;
+ 
     border: none;  
 }
 
@@ -107,13 +106,10 @@ h5{
 /* -------------------------------------------------------------------- */
 @media (min-width: 365px){
 
-    *{
-        padding: 0%;
-        margin: 0%;
-    }
+
 body{
     width: 100%;
-    padding: 10%;
+   
 }
 h3{width: 100%;
     border-radius: 5px;
@@ -162,6 +158,7 @@ margin: 1%;
 }
 .button{
     justify-content: center;
+    
 }
 .button input{
     width: 20%;
@@ -179,15 +176,16 @@ margin: 1%;
 /* -------------------------------------------------------------------- */
 /*------------------------- desktop -------------------------------------*/
 /* -------------------------------------------------------------------- */
-@media (min-width:769px){
+@media (min-width:768px){
     *{
         padding: 0%;
         margin: 0%;
     }
 body{
     width: 100%;
-    padding: 10%;
+    
 }
+
 h3{width: 100%;
     border-radius: 5px;
     height: auto;
@@ -199,7 +197,7 @@ h3{width: 100%;
 }
 .datos input{
     text-align: center;
-    width: 100%;
+    width: 70%;
 }
 h5{
     width: 100%;
@@ -227,8 +225,14 @@ margin: 0%;
 .foto-de-perfil h5{
     margin: 15px 5px;
 }
+.contraseña{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .contraseña input{
-    width: 98%;
+    width: 70%;
     margin: 10px 5px;
     text-align: center;  
  
