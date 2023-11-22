@@ -21,22 +21,25 @@ main {
 /* articulo */
 .articulo {
     margin: 10px 0px;
+
+
 }
 
-.section__h4--titulares{
+.section__h4--titulares {
     width: 100%;
     /* align-self: flex-start; */
     font-size: 18px;
     color: #666;
     /* margin: 18px 0px; */
 }
-.section__h4--titulares h4{
+
+.section__h4--titulares h4 {
     justify-content: start;
 }
 
 .imagen__del__articulos {
     width: 100%;
-
+    transition: all 2s;
 
 }
 
@@ -44,12 +47,14 @@ main {
 /* logo del envio */
 .logo-envio {
     height: 5px;
-     width: 100%;
+    width: 100%;
 }
-.logo-envio i{
+
+.logo-envio i {
     position: relative;
-   
+
 }
+
 section article figure div i {
     display: flex;
     text-align: center;
@@ -77,17 +82,18 @@ figure {
     background-color: white;
     border-top: 2px solid #ebebeb;
     padding: 5px 10px;
-
+    height: auto;
 
 }
 
-.articulo__precio-y-descuento{
+.articulo__precio-y-descuento {
     width: 220px;
     display: flex;
-    gap:10px
+
+    gap: 10px
 }
 
-.precio__del__articulo{
+.precio__del__articulo {
     width: 30%;
 }
 
@@ -100,13 +106,15 @@ figure {
 .nombre__del__articulo {
     color: #666;
     font-weight: normal;
-    margin:10px 0px ;
+    margin: 10px 0px;
 }
 
 /* ............................................................................ */
 
 /* footer */
 footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: white;
     padding: 10px;
@@ -161,27 +169,28 @@ footer p {
     }
 
     .articulo {
-        width: 46%;
-        
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 47%;
+
     }
 
-   
+
     .descripcion__del__articulo {
         padding: 5px;
         padding-top: 5px;
-        
+        height: auto;
     }
-    .logo-envio i{
-       
+
+    .logo-envio i {
+
         left: 120px;
     }
-    .articulo__precio-y-descuento{
+
+    .articulo__precio-y-descuento {
         display: flex;
         height: auto;
         width: 100%;
-       align-items: center;
-       gap: 10px;
+        align-items: center;
+        gap: 10px;
     }
 
 
@@ -193,14 +202,15 @@ footer p {
     }
 
     .descuento {
-     font-size: 12px;
+        font-size: 12px;
         width: 50%;
         margin: 15px 0px;
-        
+
     }
 
     .nombre__del__articulo {
-      font-size: 13px;
+        font-size: 13px;
+        margin: 5px 0px;
     }
 
     /* --------------------footer---------------------- */
@@ -208,7 +218,7 @@ footer p {
 
     footer {
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
     }
 
     footer section {
@@ -217,7 +227,8 @@ footer p {
 
     footer ul {
         width: 100%;
-        align-items: center;}
+        align-items: center;
+    }
 
     p {
         width: 100%;
@@ -226,14 +237,20 @@ footer p {
     }
 
 }
+
 /* -------------------------------------------- */
 
 @media (min-width:768px) {
+    .home {
+        margin-bottom: 10px;
+    }
 
-    .section__h4--titulares{
+    .section__h4--titulares {
         display: block;
         width: 100%;
         gap: 0px;
+        margin: 10px;
+        margin-left: 0%;
     }
 
     .secction__ultima--vista,
@@ -242,94 +259,119 @@ footer p {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-       gap: 10px;
+        gap: 10px;
+        align-items: flex-start;
+        height: 250px;
     }
-
 
     .articulo {
-        width: 25%;
-        margin: 10px 0px;
-        
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
+
+        transition: all 1s;
     }
-    .articulo__precio-y-descuento{
+
+    .articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+
+    }
+
+
+
+
+    .articulo__precio-y-descuento {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
         width: 100%;
         justify-content: center;
         align-items: center;
-        
-       
+        height: 10px;
+
     }
+
     .descripcion__del__articulo {
-        padding: 0px 10px;
+        padding: 0px 5px;
         height: 100px;
         display: flex;
         flex-wrap: wrap;
-        height: 50px;
-        padding: 10px 0px;
-        
+        height: auto;
+        padding-top: 10px;
+
     }
 
-   
-    .logo-envio i{
+
+    .logo-envio i {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 10px;
-        height:15px;
+        height: 15px;
         width: 15px;
         padding: 1px;
-        position: initial;
+
         position: relative;
-        left:140px;
-        top: -15px;
-       
+        left: 130px;
+        top: -22px;
+
     }
-    .precio__del__articulo{
-        
+
+    .precio__del__articulo {
+
         width: auto;
         height: auto;
         margin: 0%;
     }
-    .descuento{
+
+    .descuento {
         margin-left: 0px;
-      position: static;
+        position: static;
         margin: 0px;
         height: auto;
         width: auto;
     }
-    .nombre__del__articulo {
-    
-       width: 100%;
-      text-align: center;
-       font-size: 14px;
-       margin-top: 20px;
-     
-    } 
 
+    .nombre__del__articulo {
+
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        height: 0;
+        transition: all 1s;
+        overflow: hidden;
+    }
+
+    .descripcion__del__articulo:hover h4 {
+        display: block;
+        height: 10px;
+        padding: 5px;
+    }
 
     /* --------------------footer---------------------- */
-   
+
     footer {
+        width: 100%;
         display: flex;
-       
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
     }
 
     footer section {
-        width:100%;
+        width: 33%;
+        padding: 15px 0px;
     }
 
     footer ul {
         width: 100%;
-        align-items: center;}
+        align-items: center;
+    }
 
     p {
         width: 100%;
         margin: 15px;
 
+    }
 
     p {
         width: 100%;
@@ -337,4 +379,147 @@ footer p {
 
     }
 }
+
+
+
+
+
+@media (min-width:1024px) {
+    .home {
+        margin-bottom: 10px;
+    }
+
+    .section__h4--titulares {
+        display: block;
+        width: 100%;
+        gap: 0px;
+        margin: 10px;
+        margin-left: 0%;
+    }
+
+    .secction__ultima--vista,
+    .ofertas {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 10px;
+        align-items: flex-start;
+        height: 300px;
+    }
+
+    .articulo {
+
+        transition: all 1s;
+    }
+
+    .articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+
+    }
+
+
+
+
+    .articulo__precio-y-descuento {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+
+    }
+
+    .descripcion__del__articulo {
+        padding: 0px 5px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 10px;
+
+    }
+
+
+    .logo-envio i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        height: 15px;
+        width: 15px;
+        padding: 1px;
+
+        position: relative;
+        left: 160px;
+        top: -22px;
+
+    }
+
+    .precio__del__articulo {
+
+        width: auto;
+        height: auto;
+        margin: 0%;
+    }
+
+    .descuento {
+        margin-left: 0px;
+        position: static;
+        margin: 0px;
+        height: auto;
+        width: auto;
+    }
+
+    .nombre__del__articulo {
+
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        height: 0;
+        transition: all 1s;
+        overflow: hidden;
+    }
+
+    .descripcion__del__articulo:hover h4 {
+        display: block;
+        height: 10px;
+        padding: 5px;
+    }
+
+    /* --------------------footer---------------------- */
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer section {
+        width: 33%;
+        padding: 15px 0px;
+    }
+
+    footer ul {
+        width: 100%;
+        align-items: center;
+    }
+
+    p {
+        width: 100%;
+        margin: 15px;
+
+    }
+
+    p {
+        width: 100%;
+        margin: 15px;
+
+    }
 }

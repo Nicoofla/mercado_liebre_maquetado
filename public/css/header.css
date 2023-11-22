@@ -195,98 +195,6 @@ nav{
     }
 
 }
-@media (min-width: 361px) {
-
-    header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5px;
-    }
-
-    .img__input__h4 {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0%;
-        padding: 0%;
-        align-items: center;
-        width: 100%;
-        gap: 5px;
-        height: 80px;
-    }
-
-    .header__section {
-        width: 63%;
-        align-items: center;
-    }
-
-    .header__section__img {
-
-        width: 50%;
-    }
-
-    .header__section input {
-        width: 90%;
-        padding: 0px 40px 0px 2px;
-        font-size: 12px;
-        margin-left: 0%;
-        /* margin-bottom: 10px; */
-        height: 30px;
-        padding-right: 10px;
-    }
-
-    .header__section__div-button {
-        padding: 5px;
-        height: 30px;
-    }
-
-    .header__h4 {
-        font-size: 12px;
-        width: 35%;
-        margin-bottom: 0%;
-        margin-top: 0px;
-    }
-/*  listas */
-nav{
-    width: 100%;
-    height: 15px;
-    padding: 0px 10px;
-   
-}
-    .header__nav__section__listas {
-        
-        display: flex;
-        justify-content: space-between;
-        font-size: 8px;
-        margin: 0px 0px;
-        align-items: center;
-    }
-
-    .header__nav__section__lista--tienda {
-        width: 48%;
-      gap: 3%;
-       display: flex;
-       margin: 0%;
-    }
-
-    .header__nav__section__lista--cliente {
-        width: 48%;
-        gap: 3%;
-       display: flex;
-       margin: 0%;
-       justify-content: end;
-    }
-
-    .fa-solid {
-        margin: 2px;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-}
 
 @media (min-width: 500px) {
 
@@ -385,7 +293,7 @@ nav{
 /* deskptop */
 /* ----------------------------------------------------------------------- */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
     header {
         width: 100%;
@@ -478,5 +386,29 @@ nav{
     .burger-menu {
         display: none;
     }
+
+}
+@media (min-width: 1024px){
+    header{
+        padding-bottom: 10px;
+    }
+    .header__section input{
+        width: 300px;
+    }
+    .header__h4{
+        font-size: 14px;
+    }
+    
+    .header__nav__section__listas{
+        font-size: 14px;
+       
+    }
+    .section__h4--titulares{
+        padding-top: 10px;
+    }
+
+
+
+
 
 }
